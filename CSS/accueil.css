@@ -1,0 +1,291 @@
+/* GENERAL STYLE */
+*{
+    margin: 0px;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style-type: none;
+}
+
+/*----------------------------**nav**--------------------------------------------*/
+
+header.container{
+    width: 100%;
+    /* position: fixed; */
+}
+nav.container_menu{
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 5px 0 3px rgba(0, 0, 0, 0.3);
+}
+img.logo{
+    width: 20%;
+}
+ul.menu{
+    width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+li.sous_menu{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+}
+.sous_menu a{
+    display: inline-block;
+}
+a.accueil_link{
+    color: white;
+    font-weight: bold;
+}
+.curent_menu{
+    background-color: teal;
+}
+
+/*----------------------------------**section1**--------------------------------------*/
+
+div.image_container{
+    height: 100vh;
+    width: 100%;
+    font-size: 25px;
+    background-image: url("../IMAGES/back_img/font2copie.jpg");
+    background-size:cover;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+div.image_container h1 {
+    font-size: 50px;
+}
+div.image_container h3{
+    font-size: 30px;
+    margin: 25px 0;
+}
+.shop_button{
+    text-decoration: none;
+    color: white;
+    font-size: 25px;
+    background-color: teal;
+    padding: 10px;
+    display: inline-block;
+    width: 225px;
+    height: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+.shop_button:hover{
+    color: teal;
+    background: none;
+    border: 1px solid teal;
+    border-radius: 25px;
+}
+
+/*----------------------------------**section2**--------------------------------------*/
+
+.product_section{
+    margin: 50px 0px;
+    /* border: 1px solid teal ; */
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    
+    
+}
+.section_title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section_title span{
+    display: inline-block;
+    width: 200px;
+    background-color: teal;
+    height: 5px;
+}
+.section_title h2{
+    margin: 0px 5px;
+}
+.product_image{
+    width: 90%;
+    height: 60%;
+    position: relative;
+    object-fit: cover;
+}
+.all_products{
+    /* border: 1px solid red; */
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.product_item{
+    display: inline-block;
+    margin: 30px;
+    /* border: 1px solid red; */
+    width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3)
+}
+figcaption{
+    position: relative;
+    width: 90%;
+    height: 20%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.product_title{
+    font-size: 25px;
+    font-weight: bold;
+}
+.product_price{
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.shop_button_container{
+    margin: 0px auto ;
+    width: 90%;
+}
+.product_item.shop_button{
+    font-size: 20px;
+}
+.product_item .shop_button:hover{
+    color: yellow;
+    background-color: teal;
+    opacity: 0.8;
+}
+
+
+/* -------------------------------------------------------testimonies------------------------------ */
+.testimony-section
+{
+    display: flex;
+    width: 75%;
+    position: relative;
+    margin: 25px auto;
+}
+.testimony-item
+{
+    width: 300px;
+    height: 350px;
+    position: relative;
+    margin: 25px;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    padding: 5px;
+}
+.testimony-text-container
+{
+    width: 90%;
+    height: 50%;
+    position: relative;
+    margin: 0px auto;
+}
+.testimony-user
+{
+    height:40%;
+    width:90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+}
+.testimony-user-profile
+{
+    height: 10%;
+    width: 90%;
+    position: relative;
+    text-align: center;
+    font-style: italic;
+}
+.testimony-user-logo
+{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.testimony-text
+{
+    text-align: justify;
+    font-size: 16px;
+}
+
+.testimony-user-name
+{
+    font-weight: bold;
+}
+
+/*-----------------------------------------------new letter section----------------------------------------------*/
+
+
+.newletter_section{
+    position: relative;
+    height: 300px;
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: teal;
+}
+
+.newletter_container{
+    width: 80%;
+    height: 40%;
+    position: relative;
+    margin:  0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.newletter_form input[type="email"]{
+    width: 100px;
+    height: 50px;
+    position: relative;
+    outline: none;
+    border-radius: 5px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.title  {
+    font-size: 25px;
+    margin: 10px 0px;
+    color: white;
+}
+.newletter_form input[type="submit"]{
+    position: relative;
+    width: 25%;
+    height: 50px;
+    outline: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+}
